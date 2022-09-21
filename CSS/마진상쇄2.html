@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마진상쇄2</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .p{
+            width: 80%;
+            margin: auto;
+            padding: 3rem;
+            background-color: #ccc;
+        }
+        .p .c{
+            /* 자식의 바깥여백은 부모의 안쪽여백으로 */
+            /* margin: 3rem; */
+            background-color: #ef8;
+        }
+    </style>
+</head>
+<body>
+    <div class="p">
+        <div class="c"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aliquam magnam quos, sapiente maxime molestiae dolor voluptatem laborum eum accusantium, consequuntur corrupti quae porro illum harum deserunt eius quaerat praesentium.
+
+        </div>
+    </div>
+</body>
+</html>
