@@ -1,6 +1,50 @@
 body{
     /* color: #00ffff; */
     /* color: #f00; */
+margin: 0;
 color: coral; 
 background-color: #efefef;
+font-size: 0.8rem;
+color: #333;
 }
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+header{
+    min-height: 150px;
+    margin-top: 50px;
+    background-color: #999;
+}
+.slider{
+    padding: 1rem;
+    min-height: 200px;
+    box-sizing: border-box;
+    background-color: #ef8;
+}
+main{
+    background-color: rgb(170, 133, 249);
+}
+main .container{
+    overflow: hidden;
+    width: 1190px;
+    margin: 0 auto;
+}
+/* float로 지정된 요소뒤 inline제거 */
+main .container::after{
+    content: '';
+    display: block;
+    clear: both;
+    /* background-color: #fff; */
+}
+main section{
+    width: 33.3333%;
+    min-height: 200px;
+    background-color: #8fe;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+section:nth-of-type(1){float: left;}
+section:nth-of-type(2){float: left;}
+section:nth-of-type(3){float: left;}
