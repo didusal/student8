@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션1</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+    ol,ul,li{list-style: none;}
+        /* .wrap{margin: 50px;} */
+
+        header{
+            background-color: #f8e
+            ;
+        }
+        header .header-wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fe8;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        header .header-wrap .logo{
+            width: 120px; height: 80px;
+            background-color: #000;
+        }
+        header .header-wrap .util{
+
+        }
+
+
+
+
+        nav{
+            /* position: relative; */
+            padding: 1rem; 
+            background-color: #ccc;
+        }
+        
+        .nav-wrap{
+            padding: 1rem; 
+            background-color: #999;
+        }
+        .nav-wrap >ul{
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background-color: #666;
+        }
+        .nav-wrap li.d1{
+            background-color: #333;
+        }
+        .nav-wrap li.d1 div.d2{
+            position: absolute;
+            left: 0; top:0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 아키테이블 d2 스타일 -->
+    <div class="wrap">
+        <header>
+            <nav>
+                <div class="nav-wrap">
+                    <ul>
+                        <li class="d1 menu1">
+                            menu1
+                            <div class="d2">
+                                <ul>
+                                    <li class="sub1">sub1</li>
+                                    <li class="sub2">sub2</li>
+                                    <li class="sub3">sub3</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d1 menu2">
+                            menu2
+                            <div class="d2">
+                                <ul>
+                                    <li class="sub1">sub1</li>
+                                    <li class="sub2">sub2</li>
+                                    <li class="sub3">sub3</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d1 menu3">
+                            menu3
+                            <div class="d2">
+                                <ul>
+                                    <li class="sub1">sub1</li>
+                                    <li class="sub2">sub2</li>
+                                    <li class="sub3">sub3</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d1 menu4">
+                            menu4
+                            <div class="d2">
+                                <ul>
+                                    <li class="sub1">sub1</li>
+                                    <li class="sub2">sub2</li>
+                                    <li class="sub3">sub3</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+ 
+</body>
+</html>

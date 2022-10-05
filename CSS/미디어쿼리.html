@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            background-color: #ccc;
+            color: black;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            width: 80%;
+            min-width: 960px;
+            max-width: 1600;
+            margin: auto;
+        }
+        .container .box{
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 50%;
+            height: 300px;
+        
+        }
+        .container .box1{
+            background-color: #ef8;
+        }
+        .container .box2{
+            background-color: #f8e;
+        }
+        @media (max-width:960px){
+            body{
+                background-color: #fff;color: #f00;
+            }
+            .container{
+                min-width: none;max-width: none;
+                width: 95%;
+                flex-wrap: ;
+                
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos facere sit obcaecati minus, molestiae maiores. Qui odio, animi sint quod nulla voluptate, dolores non dolorum deserunt laborum possimus eligendi nesciunt!</p>
+<div class="container">
+    <div class="box1">box</div>
+    <div class="box2">box</div>
+</div>
+</body>
+</html>
