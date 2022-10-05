@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex연습</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .wrap{
+            margin: 50px;
+            padding: 1rem;
+            /* background-color: #ccc; */
+        }
+        .parent{
+            min-width: 1900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            /* background-color: #999; */
+            padding: 1rem;
+            
+        }
+        .parent .item{
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: 33.333%;
+            padding: 1rem;
+            /* border: 1px solid #000; */
+            box-sizing: border-box;
+            /* background-color: #666; */
+        }
+        .parent .item .innet{
+            height: 300px;
+            box-sizing: border-box;
+            background-color: #ef8;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="parent">
+            <div class="item item1">
+                <div class="innet">itrm1</div>
+            </div>
+            <div class="item item2">
+                <div class="innet">itrm2</div>
+            </div>
+            <div class="item item3">
+                <div class="innet">itrm3</div>
+            </div>
+            <div class="item item4">
+                <div class="innet">itrm4</div>
+            </div>
+            <div class="item item5">
+                <div class="innet">itrm5</div>
+            </div>
+            <div class="item item6">
+                <div class="innet">itrm6</div>
+            </div>
+            <div class="item item7">
+                <div class="innet">itrm7</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
