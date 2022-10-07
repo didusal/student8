@@ -1,0 +1,5 @@
+{
+    "typescript.tsserver.enableTracing": false,
+    "problems.decorations.enabled": true,
+    "problems.defaultViewMode": "tree"
+}
